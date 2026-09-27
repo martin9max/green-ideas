@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sora", "Manrope", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-forest-950: #081F17;
+  --color-forest-900: #0A2E22;
+  --color-forest-800: #124330;
+  --color-forest-700: #1B5B41;
+  --color-leaf-500: #3FA66B;
+  --color-leaf-400: #63C088;
+  --color-gold-500: #F2B705;
+  --color-gold-400: #FFD23F;
+  --color-cream-50: #F7F5EE;
+  --color-cream-100: #EFEBDD;
+  --color-ink-900: #0D1A14;
+  --color-ink-700: #33453C;
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 38s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-gold-500);
+  color: var(--color-ink-900);
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-gold-500);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
