@@ -105,7 +105,7 @@ export default function Header() {
               href="tel:++381 65 9133122"
               className="mt-4 flex items-center justify-center gap-2 text-cream-50 font-medium py-3"
             >
-              <Phone size={18} /> +381 65 9133122"
+              <Phone size={18} /> +381 65 9133122
             </a>
           </nav>
         </div>
