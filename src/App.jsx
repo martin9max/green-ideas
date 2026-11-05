@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import WhyUs from './components/WhyUs'
 import Services from './components/Services'
 import Calculator from './components/Calculator'
+import SolarInfo from './components/SolarInfo'
 import Clients from './components/Clients'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
@@ -17,6 +18,7 @@ export default function App() {
         <WhyUs />
         <Services />
         <Calculator />
+        <SolarInfo />
         <Clients />
         <FAQ />
         <Contact />

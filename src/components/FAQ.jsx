@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Plus } from 'lucide-react'
 import { faqs } from '../data/content'
 
@@ -12,7 +12,7 @@ export default function FAQ() {
         <div className="text-center mb-14">
           <p className="font-mono text-xs tracking-[0.25em] uppercase text-leaf-500 mb-3">FAQ</p>
           <h2 className="font-display font-extrabold text-4xl sm:text-5xl text-ink-900 tracking-tight">
-            Najčešća pitanja
+            Najčešća pitanja o solarnim panelima
           </h2>
         </div>
 
@@ -37,19 +37,14 @@ export default function FAQ() {
                     <Plus size={16} />
                   </span>
                 </button>
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: 'easeInOut' }}
-                      className="overflow-hidden"
-                    >
-                      <p className="pb-6 text-ink-700 leading-relaxed max-w-2xl">{item.a}</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <motion.div
+                  initial={false}
+                  animate={isOpen ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  className="overflow-hidden"
+                >
+                  <p className="pb-6 text-ink-700 leading-relaxed max-w-2xl">{item.a}</p>
+                </motion.div>
               </div>
             )
           })}

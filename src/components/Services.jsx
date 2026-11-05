@@ -38,7 +38,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="max-w-sm text-cream-100/70 leading-relaxed">
-            Četiri koraka koja vas dele od sopstvene solarne elektrane. Svaki od njih vodimo mi,
+            Četiri koraka koja vas dele od sopstvenih solarnih panela i solarne elektrane. Svaki od njih vodimo mi,
             od prvog izlaska na teren do konačne saglasnosti distributera.
           </p>
         </div>

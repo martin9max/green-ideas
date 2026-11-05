@@ -27,7 +27,7 @@ function Row({ items, reverse }) {
           >
             <img
               src={`/logos/${c.file}`}
-              alt={i < items.length ? c.name : ''}
+              alt={i < items.length ? `${c.name} – klijent Green Ideas` : ''}
               loading="lazy"
               className="max-h-12 sm:max-h-14 max-w-full w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
             />

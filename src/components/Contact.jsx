@@ -44,9 +44,9 @@ export default function Contact() {
           </p>
 
           <div className="mt-10 space-y-5">
-            <ContactRow icon={<Phone size={18} />} label="+381 64 5022442 · +381 65 9133122" href = "tel:+381 65 9133122"/>
+            <ContactRow icon={<Phone size={18} />} label="+381 64 5022442 · +381 65 9133122" href="tel:+381659133122"/>
             <ContactRow icon={<Mail size={18} />} label="office@greenideas.solutions" href="mailto:office@greenideas.solutions" />
-            <ContactRow icon={<MapPin size={18} />} label="Rudi Čajaveca 1B, Zvezdara, Beograd" />
+            <address className="not-italic"><ContactRow icon={<MapPin size={18} />} label="Rudi Čajaveca 1B, Zvezdara, Beograd" /></address>
             <ContactRow icon={<AtSign size={18} />} label="@greenideas_belgrade" href="https://www.instagram.com/greenideas_belgrade/" />
           </div>
         </div>

@@ -26,6 +26,7 @@ export default function Hero() {
           playsInline
           preload="auto"
           poster="/media/hero-bg.jpg"
+          aria-hidden="true"
         >
           <source src="/media/hero-bg.webm" type="video/webm" />
           <source src="/media/hero-bg.mp4" type="video/mp4" />
@@ -43,7 +44,7 @@ export default function Hero() {
               variants={item}
               className="font-mono text-xs sm:text-sm tracking-[0.25em] uppercase text-leaf-400"
             >
-              On-grid i off-grid solarni sistemi
+              Solarni paneli · On-grid i off-grid sistemi
             </motion.p>
 
             <motion.h1
@@ -51,6 +52,7 @@ export default function Hero() {
               className="font-display font-extrabold text-cream-50 leading-[1.05] tracking-tight text-balance"
             >
               <span className="block text-5xl sm:text-6xl lg:text-7xl">Green Ideas</span>
+              <span className="sr-only"> – solarni paneli i solarni sistemi. </span>
               <span className="block text-4xl sm:text-5xl lg:text-6xl mt-2">
                 Sunce plaća <span className="text-gold-400">vaš račun.</span>
               </span>
@@ -73,8 +75,8 @@ export default function Hero() {
               variants={item}
               className="max-w-xl text-cream-100/90 text-base sm:text-lg leading-relaxed"
             >
-              Analiza, nabavka, ugradnja i papirologija za status kupac-proizvođač, sve na jednom mestu,
-              ključ u ruke, sa uštedom na računu i do 50%.
+              Ugradnja solarnih panela ključ u ruke u Beogradu i celoj Srbiji: analiza, nabavka,
+              montaža i papirologija za status kupac-proizvođač, sa uštedom na računu i do 50%.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap items-center justify-center gap-4">

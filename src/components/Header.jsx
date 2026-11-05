@@ -3,6 +3,7 @@ import { Menu, X, Phone } from 'lucide-react'
 
 const links = [
   { href: '#usluge', label: 'Usluge' },
+  { href: '#solarni-paneli', label: 'Solarni paneli' },
   { href: '#kalkulator', label: 'Procena uštede' },
   { href: '#klijenti', label: 'Reference' },
   { href: '#faq', label: 'Pitanja' },
@@ -18,7 +19,7 @@ export default function Header() {
         <a href="#hero" className="flex items-center gap-2.5 shrink-0">
           <img
             src="/logos/green-ideas-logo.jpg"
-            alt="Green Ideas"
+            alt="Green Ideas logo – solarni paneli"
             className="h-11 w-11 rounded-full object-cover ring-1 ring-white/20"
           />
           <span className="font-display font-bold text-cream-50 text-sm sm:text-base leading-tight tracking-tight">
@@ -29,7 +30,7 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav aria-label="Glavni meni" className="hidden lg:flex items-center gap-8">
           {links.map((l) => (
             <a
               key={l.href}
@@ -43,7 +44,7 @@ export default function Header() {
 
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="tel:+381 65 9133122"
+            href="tel:+381659133122"
             className="flex items-center gap-2 text-sm font-medium text-cream-50 hover:text-gold-400 transition-colors"
           >
             <Phone size={16} strokeWidth={2.5} />
@@ -102,7 +103,7 @@ export default function Header() {
             </a>
             
             <a
-              href="tel:++381 65 9133122"
+              href="tel:+381659133122"
               className="mt-4 flex items-center justify-center gap-2 text-cream-50 font-medium py-3"
             >
               <Phone size={18} /> +381 65 9133122

@@ -1,0 +1,10 @@
+{
+  "name": "Green Ideas – solarni paneli",
+  "short_name": "Green Ideas",
+  "lang": "sr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081F17",
+  "theme_color": "#081F17",
+  "icons": [{ "src": "/logos/green-ideas-logo.jpg", "sizes": "1600x1600", "type": "image/jpeg" }]
+}

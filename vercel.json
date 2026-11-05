@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "green-ideas.vercel.app" }],
+      "destination": "https://www.greenideas.solutions/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(media|logos)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}

@@ -48,6 +48,18 @@ export const clients = [
 
 export const faqs = [
   {
+    q: 'Koliko košta ugradnja solarnih panela?',
+    a: 'Cena solarnog sistema zavisi od snage (najčešće 3 do 10 kW za domaćinstvo), vrste krova i izabrane opreme. Nakon besplatnog obilaska objekta dobijate elaborat i tačnu ponudu sa cenom panela, invertera i ugradnje, bez skrivenih troškova.',
+  },
+  {
+    q: 'Gde ugrađujete solarne panele?',
+    a: 'Sedište nam je u Beogradu (Zvezdara), a solarne panele i solarne sisteme ugrađujemo za kuće, vikendice i firme širom Srbije.',
+  },
+  {
+    q: 'Koja je razlika između on-grid i off-grid solarnog sistema?',
+    a: 'On-grid sistem je povezan na elektrodistributivnu mrežu i višak struje predaje u mrežu kao kupac-proizvođač. Off-grid sistem radi nezavisno od mreže, uz baterije, i idealan je za vikendice i objekte bez priključka.',
+  },
+  {
     q: 'Koliko traje ugradnja solarnog sistema?',
     a: 'Za prosečno domaćinstvo, od potpisivanja ugovora do puštanja sistema u rad prođe obično 2 do 3 nedelje, u zavisnosti od dostupnosti opreme i procedure kod distributera struje.',
   },
