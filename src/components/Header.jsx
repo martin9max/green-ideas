@@ -3,7 +3,6 @@ import { Menu, X, Phone } from 'lucide-react'
 
 const links = [
   { href: '#usluge', label: 'Usluge' },
-  { href: '#solarni-paneli', label: 'Solarni paneli' },
   { href: '#kalkulator', label: 'Procena uštede' },
   { href: '#klijenti', label: 'Reference' },
   { href: '#faq', label: 'Pitanja' },
