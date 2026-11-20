@@ -15,8 +15,8 @@ export function structuredData() {
     description:
       'Solarni paneli i solarni sistemi ključ u ruke: analiza, elaborat, nabavka opreme, ugradnja i papirologija za status kupac-proizvođač. On-grid i off-grid sistemi za kuće i firme u Beogradu i celoj Srbiji.',
     url: `${SITE_URL}/`,
-    logo: `${SITE_URL}/logos/green-ideas-logo.jpg`,
-    image: [`${SITE_URL}/media/hero-bg.jpg`, `${SITE_URL}/logos/green-ideas-logo.jpg`],
+    logo: `${SITE_URL}/logos/green-ideas-logo-512.jpg`,
+    image: [`${SITE_URL}/media/hero-bg.jpg`, `${SITE_URL}/logos/green-ideas-logo-512.jpg`],
     telephone: '+381659133122',
     email: 'office@greenideas.solutions',
     vatID: '113971031',

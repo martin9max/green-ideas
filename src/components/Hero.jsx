@@ -1,18 +1,5 @@
-import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { stats } from '../data/content'
-
-const container = {
-  hidden: {},
-  show: {
-    transition: { staggerChildren: 0.12, delayChildren: 0.15 },
-  },
-}
-
-const item = {
-  hidden: { opacity: 0, y: 22 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
-}
 
 export default function Hero() {
   return (
@@ -24,8 +11,8 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="auto"
-          poster="/media/hero-bg.jpg"
+          preload="metadata"
+          poster="/media/hero-bg.webp"
           aria-hidden="true"
         >
           <source src="/media/hero-bg.webm" type="video/webm" />
@@ -34,33 +21,30 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-forest-950/80 via-forest-950/55 to-forest-950/90" />
 
         <div className="relative z-10 min-h-screen flex items-center py-28">
-          <motion.div
-            variants={container}
-            initial="hidden"
-            animate="show"
+          <div
             className="max-w-3xl mx-auto w-full px-5 sm:px-8 flex flex-col items-center text-center gap-6"
           >
-            <motion.p
-              variants={item}
-              className="font-mono text-xs sm:text-sm tracking-[0.25em] uppercase text-leaf-400"
+            <p
+              style={{ animationDelay: '0.15s' }}
+              className="hero-in font-mono text-xs sm:text-sm tracking-[0.25em] uppercase text-leaf-400"
             >
               Solarni paneli · On-grid i off-grid sistemi
-            </motion.p>
+            </p>
 
-            <motion.h1
-              variants={item}
-              className="font-display font-extrabold text-cream-50 leading-[1.05] tracking-tight text-balance"
+            <h1
+              style={{ animationDelay: '0.27s' }}
+              className="hero-rise font-display font-extrabold text-cream-50 leading-[1.05] tracking-tight text-balance"
             >
               <span className="block text-5xl sm:text-6xl lg:text-7xl">Green Ideas</span>
               <span className="sr-only"> – solarni paneli i solarni sistemi. </span>
               <span className="block text-4xl sm:text-5xl lg:text-6xl mt-2">
                 Sunce plaća <span className="text-gold-400">vaš račun.</span>
               </span>
-            </motion.h1>
+            </h1>
 
-            <motion.div
-              variants={item}
-              className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-cream-100/60"
+            <div
+              style={{ animationDelay: '0.39s' }}
+              className="hero-in flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs text-cream-100/60"
             >
               <span>On-grid</span>
               <span className="text-leaf-400">·</span>
@@ -69,17 +53,19 @@ export default function Hero() {
               <span>Konsultantske usluge</span>
               <span className="text-leaf-400">·</span>
               <span>Tehničke usluge</span>
-            </motion.div>
+            </div>
 
-            <motion.p
-              variants={item}
-              className="max-w-xl text-cream-100/90 text-base sm:text-lg leading-relaxed"
+            <p
+              style={{ animationDelay: '0.51s' }}
+              className="hero-in max-w-xl text-cream-100/90 text-base sm:text-lg leading-relaxed"
             >
               Ugradnja solarnih panela ključ u ruke u Beogradu i celoj Srbiji: analiza, nabavka,
               montaža i papirologija za status kupac-proizvođač, sa uštedom na računu i do 50%.
-            </motion.p>
+            </p>
 
-            <motion.div variants={item} className="flex flex-wrap items-center justify-center gap-4">
+            <div
+              style={{ animationDelay: '0.63s' }}
+              className="hero-in flex flex-wrap items-center justify-center gap-4">
               <a
                 href="#kalkulator"
                 className="group inline-flex items-center gap-2 rounded-full bg-gold-500 hover:bg-gold-400 text-ink-900 font-semibold px-6 py-3.5 transition-colors"
@@ -93,8 +79,8 @@ export default function Hero() {
               >
                 Zatražite ponudu
               </a>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

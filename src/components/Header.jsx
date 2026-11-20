@@ -17,7 +17,9 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-[4.5rem] py-3">
         <a href="#hero" className="flex items-center gap-2.5 shrink-0">
           <img
-            src="/logos/green-ideas-logo.jpg"
+            src="/logos/green-ideas-logo-96.webp"
+            width="44"
+            height="44"
             alt="Green Ideas logo – solarni paneli"
             className="h-11 w-11 rounded-full object-cover ring-1 ring-white/20"
           />
