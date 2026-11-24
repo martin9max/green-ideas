@@ -1,6 +1,12 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "green-ideas.vercel.app" }],
+      "destination": "https://www.greenideas.solutions/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "green-ideas.vercel.app" }],
       "destination": "https://www.greenideas.solutions/:path*",
